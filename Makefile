@@ -3,56 +3,44 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: marvin <marvin@student.42.fr>              +#+  +:+       +#+         #
+#    By: dani_mm__ <dani_mm__@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/09 18:21:26 by marvin            #+#    #+#              #
-#    Updated: 2023/10/09 18:21:26 by marvin           ###   ########.fr        #
+#    Updated: 2023/10/16 19:58:45 by dani_mm__        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = ft_printf.a+
-INCLUDE= include
-LIBFT= libft
-SRC_DIR= src/
-OBJ_DIR= obj/
-CC= gcc
-CFLAGS= -Wall -Wextra -Werror
-RM= rm -f
-INCLUDE= ft_printf.h
-OBJ= $(SRC:.c=.o)
+NAME = libftprintf.a
 
-SRC =\
-	ft_prinf \
-	ft_printf_utils \
-	ft_printf_ptr \
-	ft_printd_unsigned \
-	ft_print_hex 
+AR = AR
+ARFLAGS = crs
 
-SRC= $(addprefix $(SRC_DIR), $(addsuffix .c,$(SRC_FILES)))
-OBJ= $(addprefix $(OBJ_DIR), $(addsuffix .o,$(SRC_FILES)))
+CC = gcc
+CFLAGS = -Wall -Wextra -Werror
+
+RM = rm
+RMFLAGS = -f
+
+SRCS = ft_memset.c ft_bzero.c ft_calloc.c ft_putchar.c ft_putnbr.c ft_putstr.c \
+		ft_hexalong.c ft_convert_hex_char.c ft_select_hex.c ft_char_to_hexachar.c \
+		ft_percent.c ft_printf.c ft_unsigned_int.c
+
+OBJS = $(SRC:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
-		@make -C $(LIBFT)
-		@cp libf/libft.a .
-		@mv libft.a $(NAME)
-		@$(AR) $(name) $(obj)
-
-$(OBJ_DIR)%.o: $(SRC_DIR)%.c | $(objf)
-		@$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@
-
-$(OBJF):
-		@mkdir -p $(OBJ_DIR)
-
 clean:
-		@$(RM) -rf $(OBJ_DIR)
-		@make clean -C $(LIBFT)
+	@rm -f $(OBJS)
 
 fclean: clean
-		@$(RM) -f $(NAME)
-		@$(RM) -f $(LIBFT)/libft.a
+	@rm -f $(NAME)
 
 re: fclean all
+
+.c.o: $(SRC) $(INCLUDES)
+	@$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
+
+$(NAME): $(OBJS)
+	@$(AR) $(ARFLAGS) $@ $^
 
 .PHONY: all clean fclean re
