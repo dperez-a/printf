@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putptr_pf.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jesanche <jesanche@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dperez-a <dperez-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 12:54:50 by jesanche          #+#    #+#             */
-/*   Updated: 2023/10/23 16:12:19 by jesanche         ###   ########.fr       */
+/*   Updated: 2023/11/09 15:24:00 by dperez-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,13 @@ void	ft_putptr_pf(void *ptr, size_t *counter)
 	ft_putstr_pf(str, counter);
 	free(str);
 }
+/*int main()
+{
+    size_t counter = 0;
+    int num = 42;
+
+    ft_putptr_pf(&num, &counter);
+    printf("\nPrinted %zu characters.\n", counter);
+
+    return 0;
+}*/

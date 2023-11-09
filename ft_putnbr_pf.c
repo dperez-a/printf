@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_pf.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jesanche <jesanche@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dperez-a <dperez-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 12:57:31 by jesanche          #+#    #+#             */
-/*   Updated: 2023/10/23 16:26:48 by jesanche         ###   ########.fr       */
+/*   Updated: 2023/11/09 15:24:09 by dperez-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,16 @@ void	ft_putnbr_pf(int num, size_t *counter)
 		ft_putchar_pf(('0' + num % 10), counter);
 	}
 }
+/*void	ft_puthex_pf(unsigned int num, size_t *counter, char *base);
+
+int main()
+{
+    size_t counter = 0;
+    unsigned int num = 255;
+    char *base = "0123456789abcdef";
+
+    ft_puthex_pf(num, &counter, base);
+    printf("\nPrinted %zu characters.\n", counter);
+
+    return 0;
+}*/

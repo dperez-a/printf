@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_aux_pf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jesanche <jesanche@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dperez-a <dperez-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 12:52:51 by jesanche          #+#    #+#             */
-/*   Updated: 2023/10/23 16:13:07 by jesanche         ###   ########.fr       */
+/*   Updated: 2023/11/09 15:14:43 by dperez-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,3 +82,22 @@ char	*ft_aux_pf(unsigned long long n, char *base)
 	}
 	return (str);
 }
+/*int main()
+{
+    unsigned long long number = 123456789;
+    char *base = "0123456789abcdef";
+    char *result;
+
+    result = ft_aux_pf(number, base);
+    if (result == NULL)
+    {
+        printf("Error: No se pudo convertir el número.\n");
+        return 1;
+    }
+
+    printf("El número %llu en base %s es: %s\n", number, base, result);
+
+    free(result);
+
+    return 0;
+}*/

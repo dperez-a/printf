@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jesanche <jesanche@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dperez-a <dperez-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 11:34:58 by jesanche          #+#    #+#             */
-/*   Updated: 2023/10/23 16:10:02 by jesanche         ###   ########.fr       */
+/*   Updated: 2023/11/09 15:25:31 by dperez-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,3 +55,15 @@ int	ft_printf(const char *str, ...)
 	va_end(va);
 	return (counter);
 }
+/*int main()
+{
+    int count;
+    char *str = "Hello, %s! You have %d messages.\n";
+    char *name = "Alice";
+    int messages = 5;
+
+    count = ft_printf(str, name, messages);
+    printf("Printed %d characters.\n", count);
+
+    return 0;
+}*/
