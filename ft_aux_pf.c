@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dperez-a <dperez-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/02 12:52:51 by jesanche          #+#    #+#             */
-/*   Updated: 2023/11/09 15:14:43 by dperez-a         ###   ########.fr       */
+/*   Created: 2023/11/21 13:06:59 by dperez-a          #+#    #+#             */
+/*   Updated: 2023/11/21 13:12:14 by dperez-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,12 +92,12 @@ char	*ft_aux_pf(unsigned long long n, char *base)
     if (result == NULL)
     {
         printf("Error: No se pudo convertir el número.\n");
-        return 1;
+        return (1);
     }
-
+	
     printf("El número %llu en base %s es: %s\n", number, base, result);
 
     free(result);
 
-    return 0;
+    return (0);
 }*/

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dperez-a <dperez-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/02 12:54:33 by jesanche          #+#    #+#             */
-/*   Updated: 2023/11/09 15:24:16 by dperez-a         ###   ########.fr       */
+/*   Created: 2023/11/21 13:06:24 by dperez-a          #+#    #+#             */
+/*   Updated: 2023/11/21 13:12:02 by dperez-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ void	ft_puthex_pf(unsigned int num, size_t *counter, char *base)
 	ft_putstr_pf(str, counter);
 	free(str);
 }
-/*void	ft_puthex_pf(unsigned int num, size_t *counter, char *base);
+void	ft_puthex_pf(unsigned int num, size_t *counter, char *base);
 
-int main()
+/*int main()
 {
     size_t counter = 0;
     unsigned int num = 255;

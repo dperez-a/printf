@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dperez-a <dperez-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/02 12:53:59 by jesanche          #+#    #+#             */
-/*   Updated: 2023/11/09 15:24:25 by dperez-a         ###   ########.fr       */
+/*   Created: 2023/11/21 13:06:31 by dperez-a          #+#    #+#             */
+/*   Updated: 2023/11/21 13:10:15 by dperez-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ void	ft_putchar_pf(char c, size_t *counter)
 	write(1, &c, 1);
 	(*counter)++;
 }
-/*void	ft_putchar_pf(char c, size_t *counter);
+void	ft_putchar_pf(char c, size_t *counter);
 
-int main()
+/*int main()
 {
     size_t counter = 0;
     char c = 'A';
