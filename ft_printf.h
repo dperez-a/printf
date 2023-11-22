@@ -6,7 +6,7 @@
 /*   By: dperez-a <dperez-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 13:06:42 by dperez-a          #+#    #+#             */
-/*   Updated: 2023/11/21 13:06:44 by dperez-a         ###   ########.fr       */
+/*   Updated: 2023/11/22 18:31:09 by dperez-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # include <stdarg.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdio.h>
 
 # define HEX_UPP_BASE "0123456789ABCDEF"
 # define HEX_LOW_BASE "0123456789abcdef"
