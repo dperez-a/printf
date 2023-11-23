@@ -6,7 +6,7 @@
 /*   By: dperez-a <dperez-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 13:06:16 by dperez-a          #+#    #+#             */
-/*   Updated: 2023/11/21 13:11:58 by dperez-a         ###   ########.fr       */
+/*   Updated: 2023/11/23 16:13:10 by dperez-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,7 @@ void	ft_putnbr_pf(int num, size_t *counter)
 		ft_putchar_pf(('0' + num % 10), counter);
 	}
 }
-/*void	ft_puthex_pf(unsigned int num, size_t *counter, char *base);
-
-int main()
+/*int main()
 {
     size_t counter = 0;
     unsigned int num = 255;
